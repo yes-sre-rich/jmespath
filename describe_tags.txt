@@ -1,0 +1,4 @@
+aws autoscaling describe-tags --query 'Tags[?starts_with(ResourceId, `navplatform-navapi-prod`) == `true`]|[?starts_with(Key, `aws:`) == `false`].[ResourceId,Key,Value]' --output text
+
+navplatform-navapi-prod-0036-NavApiASG-1O4CNG2HXPMI4	Name	mq_navplatform_navapi_prod_artifact_0035
+navplatform-navapi-prod-0036-NavApiASG-1O4CNG2HXPMI4	mq_app
